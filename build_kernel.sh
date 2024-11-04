@@ -12,4 +12,4 @@ export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a22_defconfig
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y -j16
 
-cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
+sudo cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
